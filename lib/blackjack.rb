@@ -63,6 +63,7 @@ def runner
   until card_sum > 21 do
     card_sum += hit?(card_sum)
     display_card_total(card_sum)
+    card_sum
   end
     end_game_method(card_sum)
 end
